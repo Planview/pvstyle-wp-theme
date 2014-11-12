@@ -1,0 +1,46 @@
+$avenir-path: '../fonts/' !default;
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('#{$avenir-path}AvenirLTStd-Light.eot'); /* IE9 Compat Modes */
+  src: url('#{$avenir-path}AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('#{$avenir-path}AvenirLTStd-Light.woff') format('woff'), /* Modern Browsers */
+       url('#{$avenir-path}AvenirLTStd-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('#{$avenir-path}AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg'); /* Legacy iOS */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('#{$avenir-path}AvenirLTStd-LightOblique.eot'); /* IE9 Compat Modes */
+  src: url('#{$avenir-path}AvenirLTStd-LightOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('#{$avenir-path}AvenirLTStd-LightOblique.woff') format('woff'), /* Modern Browsers */
+       url('#{$avenir-path}AvenirLTStd-LightOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('#{$avenir-path}AvenirLTStd-LightOblique.svg#AvenirLTStd-LightOblique') format('svg'); /* Legacy iOS */
+  font-weight: 300;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('#{$avenir-path}AvenirLTStd-Heavy.eot'); /* IE9 Compat Modes */
+  src: url('#{$avenir-path}AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('#{$avenir-path}AvenirLTStd-Heavy.woff') format('woff'), /* Modern Browsers */
+       url('#{$avenir-path}AvenirLTStd-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('#{$avenir-path}AvenirLTStd-Heavy.svg#AvenirLTStd-Heavy') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('#{$avenir-path}AvenirLTStd-HeavyOblique.eot'); /* IE9 Compat Modes */
+  src: url('#{$avenir-path}AvenirLTStd-HeavyOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('#{$avenir-path}AvenirLTStd-HeavyOblique.woff') format('woff'), /* Modern Browsers */
+       url('#{$avenir-path}AvenirLTStd-HeavyOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('#{$avenir-path}AvenirLTStd-HeavyOblique.svg#AvenirLTStd-HeavyOblique') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-style: oblique;
+}
+

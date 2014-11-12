@@ -1,0 +1,17 @@
+{
+  "name": "pvstyle",
+  "version": "0.0.0",
+  "description": "![Travis CI Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-2",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0"
+  }
+}

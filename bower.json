@@ -1,0 +1,21 @@
+{
+  "name": "pvstyle",
+  "version": "0.0.0",
+  "authors": [
+    "Steve Crockett <crockett95@gmail.com>"
+  ],
+  "license": "GPL-2",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.0",
+    "fontawesome": "~4.2.0",
+    "respond": "~1.4.2"
+  }
+}

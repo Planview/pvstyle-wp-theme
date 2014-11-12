@@ -1,0 +1,104 @@
+.site-header {
+	background-color: $brand-primary;
+	color: #fff;
+	a {
+		color: #ccc;
+		&:hover, &:active {
+			color: #eee;
+		}
+	}
+}
+
+.site-branding {
+	@include make-sm-column(3);
+	@include make-md-column(2);
+}
+
+.main-navigation {
+	@include make-sm-column(9);
+	@include make-md-column(10);
+	@media screen and (min-width: $screen-sm-min) {
+		padding-top: 42px;
+	}
+	.search-form {
+		background-color: lighten($brand-primary, 10%);
+		padding: 6px;
+		float: right;
+		input, button {
+			border: 0;
+			background-color: transparent;
+			margin-bottom: 0;
+		}
+		label {
+			margin-bottom: 0;
+		}
+		@media screen and (max-width: $screen-sm-max) {
+			display: none !important;
+		}
+	}
+	.search-field {
+		width: 200px;
+		@include pv-placeholder {
+			color: $gray-lighter;
+			font-weight: 300;
+		}
+	}
+	.search-submit {
+		color: $gray-lighter;
+	}
+}
+.main-nav>li>a {
+	&:hover, &:active {
+		background-color: darken($brand-primary, 5%);
+	}
+}
+.site-title {
+	font-weight: 300;
+	font-size: 20px;
+	a {
+		color: white;
+		&:hover, &:active {
+			text-decoration: none;
+		}
+	}
+	.styleguide {
+		display: block;
+		font-size: 32px;
+	}
+}
+
+.site-footer {
+	background-color: $gray;
+	color: #fff;
+	padding: {
+		top: 10px;
+		bottom: 10px;
+	}
+	@media screen and (min-width: $screen-sm-min) {
+		padding: {
+			top: 20px;
+			bottom: 20px;
+		}
+	}
+	a {
+		color: #ccc;
+		&:hover, &:active {
+			color: #eee;
+		}
+	}
+}
+
+.logo {
+	display: inline-block;
+	background: {
+		image: url('../img/Planview-Logo-White-White.png');
+		repeat: no-repeat;
+		position: center center;
+		size: 80%;
+	}
+	height: 54px * 0.8;
+	width: 235px * 0.8;
+}
+.site-brand {
+	margin-bottom: 20px;
+}
