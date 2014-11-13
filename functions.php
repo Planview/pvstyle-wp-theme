@@ -12,6 +12,12 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
+function pvstyle_settings($setting) {
+	$settings = include get_stylesheet_directory() . '/settings.php';
+
+	return $settings[$setting];
+}
+
 if ( ! function_exists( 'pvstyle_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -96,7 +102,8 @@ function pvstyle_scripts() {
 	if (is_admin()) {
 		wp_enqueue_style( 'pvstyle-style', get_stylesheet_uri() );
 	} else {
-		wp_enqueue_style( 'pvstyle-style', get_stylesheet_directory_uri() . "/css/style.css" );
+		wp_register_style( 'avenir', pvstyle_settings('font-url') );	
+		wp_enqueue_style( 'pvstyle-style', get_stylesheet_directory_uri() . "/css/style.css", array('avenir') );
 	}
 	
 	wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri() . '/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js', array('jquery'));

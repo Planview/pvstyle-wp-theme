@@ -1,0 +1,7 @@
+.home-jumbotron {
+	@include make-row();
+	@extend .jumbotron;
+	margin-top: -10px;
+	border-radius: 0 !important;
+	background-color: #ccc;
+}

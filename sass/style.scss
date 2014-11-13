@@ -17,7 +17,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 */
 @import "mixins";
-@import "type/avenir";
 
 body { font-weight: 300; }
 
@@ -40,3 +39,5 @@ body { font-weight: 300; }
 		bottom: 20px;
 	}
 }
+
+@import "front";
