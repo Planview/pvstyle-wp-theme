@@ -91,9 +91,26 @@ add_action( 'wp', 'pvstyle_setup_author' );
 /**
  * Polyfills for IE8
  */
-function pvppannouce_ie_polyfills() { ?>
+function pvstyle_ie_polyfills() { ?>
 <!--[if lte IE 8]>
     <script src="<?php echo get_template_directory_uri() . '/bower_components/respond/dest/respond.min.js' ?>"></script>
 <![endif]-->
 <?php }
-add_action( 'wp_head', 'pvppannouce_ie_polyfills', 60 );
+add_action( 'wp_head', 'pvstyle_ie_polyfills', 60 );
+
+function pvstyle_tinymce_styles() {
+	add_editor_style( pvstyle_settings('font-url') );
+	add_editor_style( 'css/editor.css' );
+}
+add_action( 'after_setup_theme', 'pvstyle_tinymce_styles' );
+
+/**
+ * Make the editor respect empty `<span>` elements
+ */
+function pvstyle_tinymce_settings_filter ( $settings ) {
+	$opts = '*[*]';
+	$settings['valid_elements'] = $opts;
+	$settings['extended_valid_elements'] = $opts;
+	return $settings;    
+}
+add_filter( 'tiny_mce_before_init', 'pvstyle_tinymce_settings_filter' );

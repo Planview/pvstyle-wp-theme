@@ -18,26 +18,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 @import "mixins";
 
-body { font-weight: 300; }
-
 @import "settings/bootstrap";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 @import "settings/fontawesome";
 @import "fontawesome/scss/font-awesome";
 
-.screen-reader-text {
-	@extend .sr-only;
-}
-
+@import "base";
 @import "site";
-
-.content-area {
-	@extend .container;
-	background-color: #fff;
-	padding: {
-		top: 10px;
-		bottom: 20px;
-	}
-}
-
 @import "front";

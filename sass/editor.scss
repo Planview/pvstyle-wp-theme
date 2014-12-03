@@ -1,0 +1,12 @@
+@import "mixins";
+
+@import "settings/bootstrap";
+$body-bg: #fff;
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "settings/fontawesome";
+@import "fontawesome/scss/font-awesome";
+
+body { padding: 15px !important; }
+
+@import "base";
+@import "front";
