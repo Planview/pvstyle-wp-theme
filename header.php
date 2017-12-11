@@ -30,13 +30,14 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					
+<!--				
 						<div class="pull-right"><?php get_search_form(); ?></div>
 						<?php wp_nav_menu(array(
 							'theme_location' => 'primary',
 							'menu_class' => 'nav nav-pills main-nav',
 							'walker' => new The_Bootstrap_Nav_Walker()
 						) ); ?>
+-->
 				</nav><!-- #site-navigation -->
 			</div>
 		</div>

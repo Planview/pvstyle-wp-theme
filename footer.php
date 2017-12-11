@@ -12,15 +12,17 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
+<!--
 			<?php wp_nav_menu( array(
 					'theme_location' => 'footer',
 					'container' => 'nav',
 					'menu_class' => 'list-inline text-center',
 					'depth' => 1,
 				) ); ?>
+-->
 			<div class="site-info">
 				<p class="text-center site-brand">
-					<a href="http://www.planview.com">
+					<a href="http://www.planview.com/">
 						<span class="logo text-hide"><?php _e('Planview', 'pvstyle'); ?></span>
 					</a>
 				</p>
