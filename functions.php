@@ -99,6 +99,9 @@ function pvstyle_widgets_init() {
  * Enqueue scripts and styles.
  */
 function pvstyle_scripts() {
+  wp_register_style('bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), '3.3.7', 'all');
+  wp_enqueue_style('bootstrap-css');
+  
 	if (is_admin()) {
 		wp_enqueue_style( 'pvstyle-style', get_stylesheet_uri() );
 	} else {
